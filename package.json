@@ -1,14 +1,16 @@
 {
+  "homepage": "https://g0tt0n.github.io/temperature-converter",
   "name": "temperature-converter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1",
-    "axios": "^0.19.0",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
     "redux": "^4.0.4",
     "redux-form": "^8.2.5",
     "redux-thunk": "^2.3.0",
@@ -18,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,7 +40,3 @@
     ]
   }
 }
-
-
-
-
